@@ -9,17 +9,17 @@ class BaryCentricTriangle(object):
         u = np.array([x[1] * y[2] - x[2] * y[1], x[2] * y[0] - x[0] * y[2], x[0] * y[1] - x[1] * y[0]])
         return u
 
-    def barycentric(self, BaryCentricTriangle, pts, p):
+    def barycentric(self, pts, p):
         x = np.array([pts[2][0]-pts[0][0], pts[1][0]-pts[0][0], pts[0][0]-p[0]])
         y = np.array([pts[2][1]-pts[0][1], pts[1][1]-pts[0][1], pts[0][1]-p[1]])
-        u = BaryCentricTriangle.cross_product(x, y)
+        u = self.cross_product(x, y)
         if abs(u[2]) < 1:
             m = np.array([-1, 1, 1])
             return m
         m = np.array([1 - (u[0] + u[1])/u[2], u[1]/u[2], u[0]/u[2]])
         return m
 
-    def triangle(self, pts, image, BaryCentricTriangle, color):
+    def triangle(self, pts, image, color):
         bboxmin = np.array([image.width - 1, image.height])
         bboxmax = np.array([0, 0])
         clamp = np.array([image.width - 1, image.height])
@@ -30,12 +30,12 @@ class BaryCentricTriangle(object):
         p = [[], []]
         for p[0] in range(bboxmin[0], bboxmax[0] + 1):
             for p[1] in range(bboxmin[1], bboxmax[1] + 1):
-                bc_screen = BaryCentricTriangle.barycentric(BaryCentricTriangle, pts, p)
+                bc_screen = self.barycentric(pts, p)
                 if bc_screen[0] < 0 or bc_screen[1] < 0 or bc_screen[2] < 0:
                     continue
                 image.set_pixel(p[0], p[1], color)
 
-    def face_triangle(self, image, BaryCentricTriangle, obj_file, width, height):
+    def face_triangle(self, image, obj_file, width, height):
         light_dir = np.array([0, 0, -1])
         vertices, faces = image.open_file(obj_file)
         for face in faces:
@@ -60,7 +60,7 @@ class BaryCentricTriangle(object):
             n_norm = n / np.linalg.norm(n)
             intensity = np.dot(n_norm, light_dir)
             if intensity > 0:
-                BaryCentricTriangle.triangle(screen_coords, image, BaryCentricTriangle, (intensity * 255, intensity * 255, intensity * 255))
+                self.triangle(screen_coords, image, (intensity * 255, intensity * 255, intensity * 255))
 
 
 
@@ -73,6 +73,6 @@ if __name__ == '__main__':
     barycentric.triangle(pts, triangle_image, barycentric, (255, 0, 0))
     triangle_image.write("barycentric.jpg")
     '''
-    barycentric.face_triangle(triangle_image, barycentric, "african_head.obj", triangle_image.width, triangle_image.height)
+    barycentric.face_triangle(triangle_image, "african_head.obj", triangle_image.width, triangle_image.height)
     # triangle_image.write("face_triangle.jpg")
     triangle_image.write("face_triangle_light.jpg")

@@ -84,8 +84,11 @@ class Image(object):
 
 
 # triangle("african_head.obj")
+
+'''
 if __name__ == '__main__':
     head_image = Image(1024, 1024)
     # head_image.draw_line(0, 0, 1023, 1023, WHITE)
     head_image.draw_triangle_wireframe("african_head.obj")
     head_image.write("african_head.jpg")
+'''

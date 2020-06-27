@@ -39,7 +39,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Texture">
+  <component name="RunManager" selected="Python.Perspective">
     <configuration name="BaryCentric" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tinyrenderer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,20 +84,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="LineDrawAlgorithm" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Perspective" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tinyrenderer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LineDrawAlgorithm.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Perspective.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -121,7 +118,7 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Texture.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -152,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Perspective" />
         <item itemvalue="Python.Texture" />
-        <item itemvalue="Python.ZBuff" />
-        <item itemvalue="Python.BaryCentric" />
-        <item itemvalue="Python.FillingTriangles" />
-        <item itemvalue="Python.LineDrawAlgorithm" />
+        <item itemvalue="Python.Perspective" />
+        <item itemvalue="Python.Perspective" />
+        <item itemvalue="Python.Texture" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +171,9 @@
       <workItem from="1590796719921" duration="2554000" />
       <workItem from="1590901117080" duration="12244000" />
       <workItem from="1590914420079" duration="34177000" />
-      <workItem from="1593176201987" duration="2032000" />
+      <workItem from="1593176201987" duration="8619000" />
+      <workItem from="1593197029056" duration="7249000" />
+      <workItem from="1593215815523" duration="291000" />
     </task>
     <servers />
   </component>
@@ -190,42 +189,46 @@
       <screen x="59" y="27" width="2501" height="1413" />
     </state>
     <state x="552" y="610" width="794" height="684" key="#xdebugger.evaluate/59.27.2501.1413@59.27.2501.1413" timestamp="1593176690691" />
-    <state width="1443" height="259" key="GridCell.Tab.0.bottom" timestamp="1593178507925">
+    <state width="2455" height="280" key="GridCell.Tab.0.bottom" timestamp="1593210740519">
       <screen x="59" y="27" width="2501" height="1413" />
     </state>
-    <state width="1443" height="259" key="GridCell.Tab.0.bottom/59.27.2501.1413@59.27.2501.1413" timestamp="1593178507925" />
-    <state width="1443" height="259" key="GridCell.Tab.0.center" timestamp="1593178507925">
+    <state width="2455" height="280" key="GridCell.Tab.0.bottom/59.27.2501.1413@59.27.2501.1413" timestamp="1593210740519" />
+    <state width="2455" height="280" key="GridCell.Tab.0.center" timestamp="1593210740519">
       <screen x="59" y="27" width="2501" height="1413" />
     </state>
-    <state width="1443" height="259" key="GridCell.Tab.0.center/59.27.2501.1413@59.27.2501.1413" timestamp="1593178507925" />
-    <state width="1443" height="259" key="GridCell.Tab.0.left" timestamp="1593178507925">
+    <state width="2455" height="280" key="GridCell.Tab.0.center/59.27.2501.1413@59.27.2501.1413" timestamp="1593210740519" />
+    <state width="2455" height="280" key="GridCell.Tab.0.left" timestamp="1593210740519">
       <screen x="59" y="27" width="2501" height="1413" />
     </state>
-    <state width="1443" height="259" key="GridCell.Tab.0.left/59.27.2501.1413@59.27.2501.1413" timestamp="1593178507925" />
-    <state width="1443" height="259" key="GridCell.Tab.0.right" timestamp="1593178507925">
+    <state width="2455" height="280" key="GridCell.Tab.0.left/59.27.2501.1413@59.27.2501.1413" timestamp="1593210740519" />
+    <state width="2455" height="280" key="GridCell.Tab.0.right" timestamp="1593210740519">
       <screen x="59" y="27" width="2501" height="1413" />
     </state>
-    <state width="1443" height="259" key="GridCell.Tab.0.right/59.27.2501.1413@59.27.2501.1413" timestamp="1593178507925" />
-    <state width="1443" height="289" key="GridCell.Tab.1.bottom" timestamp="1593176727421">
+    <state width="2455" height="280" key="GridCell.Tab.0.right/59.27.2501.1413@59.27.2501.1413" timestamp="1593210740519" />
+    <state width="2455" height="280" key="GridCell.Tab.1.bottom" timestamp="1593210740519">
       <screen x="59" y="27" width="2501" height="1413" />
     </state>
-    <state width="1443" height="289" key="GridCell.Tab.1.bottom/59.27.2501.1413@59.27.2501.1413" timestamp="1593176727421" />
-    <state width="1443" height="289" key="GridCell.Tab.1.center" timestamp="1593176727420">
+    <state width="2455" height="280" key="GridCell.Tab.1.bottom/59.27.2501.1413@59.27.2501.1413" timestamp="1593210740519" />
+    <state width="2455" height="280" key="GridCell.Tab.1.center" timestamp="1593210740519">
       <screen x="59" y="27" width="2501" height="1413" />
     </state>
-    <state width="1443" height="289" key="GridCell.Tab.1.center/59.27.2501.1413@59.27.2501.1413" timestamp="1593176727420" />
-    <state width="1443" height="289" key="GridCell.Tab.1.left" timestamp="1593176727420">
+    <state width="2455" height="280" key="GridCell.Tab.1.center/59.27.2501.1413@59.27.2501.1413" timestamp="1593210740519" />
+    <state width="2455" height="280" key="GridCell.Tab.1.left" timestamp="1593210740519">
       <screen x="59" y="27" width="2501" height="1413" />
     </state>
-    <state width="1443" height="289" key="GridCell.Tab.1.left/59.27.2501.1413@59.27.2501.1413" timestamp="1593176727420" />
-    <state width="1443" height="289" key="GridCell.Tab.1.right" timestamp="1593176727421">
+    <state width="2455" height="280" key="GridCell.Tab.1.left/59.27.2501.1413@59.27.2501.1413" timestamp="1593210740519" />
+    <state width="2455" height="280" key="GridCell.Tab.1.right" timestamp="1593210740519">
       <screen x="59" y="27" width="2501" height="1413" />
     </state>
-    <state width="1443" height="289" key="GridCell.Tab.1.right/59.27.2501.1413@59.27.2501.1413" timestamp="1593176727420" />
+    <state width="2455" height="280" key="GridCell.Tab.1.right/59.27.2501.1413@59.27.2501.1413" timestamp="1593210740519" />
     <state x="847" y="350" key="SettingsEditor" timestamp="1590629539071">
       <screen x="59" y="27" width="2501" height="1413" />
     </state>
     <state x="847" y="350" key="SettingsEditor/59.27.2501.1413@59.27.2501.1413" timestamp="1590629539071" />
+    <state width="744" height="545" key="XDebugger.FullValuePopup" timestamp="1593199334447">
+      <screen x="59" y="27" width="2501" height="1413" />
+    </state>
+    <state width="744" height="545" key="XDebugger.FullValuePopup/59.27.2501.1413@59.27.2501.1413" timestamp="1593199334447" />
     <state x="1535" y="410" width="672" height="678" key="search.everywhere.popup" timestamp="1593178141899">
       <screen x="59" y="27" width="2501" height="1413" />
     </state>
@@ -235,9 +238,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BaryCentric.py</url>
-          <line>58</line>
-          <option name="timeStamp" value="59" />
+          <url>file://$PROJECT_DIR$/Perspective.py</url>
+          <line>121</line>
+          <option name="timeStamp" value="87" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -248,14 +251,20 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="perspective_mat" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/tinyrenderer$Perspective.coverage" NAME="Perspective Coverage Results" MODIFIED="1593203394673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tinyrenderer$TexProjection.coverage" NAME="Texture Coverage Results" MODIFIED="1591042619486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tinyrenderer$barycentric.coverage" NAME="BaryCentric Coverage Results" MODIFIED="1590914237096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tinyrenderer$FillingTriangles.coverage" NAME="FillingTriangles Coverage Results" MODIFIED="1590905983725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tinyrenderer$LineDrawAlgorithm.coverage" NAME="LineDrawAlgorithm Coverage Results" MODIFIED="1590643806951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tinyrenderer$ZBuff.coverage" NAME="ZBuff Coverage Results" MODIFIED="1591016913588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tinyrenderer$Texture.coverage" NAME="Texture Coverage Results" MODIFIED="1593178507919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tinyrenderer$Texture.coverage" NAME="Texture Coverage Results" MODIFIED="1593180792262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tinyrenderer$BaryCentric.coverage" NAME="BaryCentric Coverage Results" MODIFIED="1590999901097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
